@@ -80,8 +80,8 @@ def signup():
             "password": password,
         }
     )
-
-    return "", 200  # Return an empty response with status code 200
+    return render_template("loginresult.html", result="yes")
+    # return "", 200  # Return an empty response with status code 200
 
 
 @app.route("/api/info", methods=["POST"])
